@@ -1,0 +1,33 @@
+void setup() {
+size(640, 360);
+frameRate(200);
+background(255, 251, 116);
+fill(224, 116, 255);
+colorMode(HSB,255,255,255);
+}
+int col = 0;
+
+void draw() {
+col++;
+fill(col,255,255);
+if (col>255) col=0;
+if (mousePressed == true) {
+switch (mouseButton) {
+case LEFT:
+fill(224, 116, 255);
+break;
+case RIGHT:
+fill(116, 255, 117);
+break;
+case CENTER:
+fill(54,237,255);
+break;
+}
+variableRect(mouseX, mouseY, pmouseX, pmouseY);
+}
+}
+void variableRect(int x, int y, int px, int py) {
+float speed = abs(x-px) + abs(y-py);
+stroke(speed);
+rect(x, y, speed, speed);
+}
