@@ -18,7 +18,7 @@ void setup() {
     y[i] = random(R[i], height - R[i]);
     velX[i] = random(3, 10) * ((int)random(0, 2)==0?1:-1);
     velY[i] = random(3, 10) * ((int)random(0, 2)==0?1:-1);
-    col[i] = color(random(0, 255), random(0, 255), random(0, 255));
+    col[i] = color(random(0, 255), random(0, 255), random(0, 255)); 
   }
 }
 
@@ -30,11 +30,11 @@ void draw() {
     y[i]+=velY[i];
     if (x[i]<R[i] || x[i]> width-R[i]) {
       velX[i] = -velX[i];
-      col[i] = color(random(0, 255), random(0, 255), random(0, 255));
+      col[i] = color(random(0, 255), random(0, 255), random(0, 255));  //создание цвета при отскоке
     }
     if (y[i]<R[i] || y[i]> height-R[i]) {
       velY[i] = -velY[i];
-      col[i] = color(random(#36EDFF), random(#FFF536), random(#FF364E));
+      col[i] = color(random(0, 255), random(0, 255), random(0, 255));
     }
     fill(col[i]);
     circle(x[i], y[i], R[i]*2);
