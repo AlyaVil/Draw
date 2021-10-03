@@ -9,7 +9,7 @@ public void setup() {
   colorMode(HSB);
 }
 int D=50;
-color col;
+color col; //dont work...
 int we = 1;
 int x, y;
 public void draw() {
