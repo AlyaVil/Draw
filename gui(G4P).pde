@@ -16,7 +16,7 @@
 
 public void button1_click1(GButton source, GEvent event) { //_CODE_:button1:735725:
   println("button1 - GButton >> GEvent." + event + " @ " + millis());
-  col = color(random(0,360),255,255);
+  col = color(random(0,360),255,255);// dont work...
 } //_CODE_:button1:735725:
 
 public void slider1_change1(GSlider source, GEvent event) { //_CODE_:slider1:734817:
