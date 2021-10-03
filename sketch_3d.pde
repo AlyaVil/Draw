@@ -25,12 +25,12 @@ void setup() {
 
 void draw() {
   background(255,196,254);
-  rotateX(radians(60)); //угол наклона по оси Х
-  translate(0, -250,-200);
-  noFill();
+  rotateX(radians(60)); //угол наклона по оси Х //
+  translate(0, -250,-200);//
+  noFill();//
   stroke(0);
-  strokeWeight(2);
-  rect(10,10,width-2, height-2);
+  strokeWeight(2);//
+  rect(10,10,width-2, height-2);//
 
   for (int i=0; i< amount; i++) {
     x[i]+=velX[i];
