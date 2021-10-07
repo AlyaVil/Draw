@@ -1,5 +1,5 @@
-float playerX = 400,
-  playerY = 400,
+float playerX = 300,
+  playerY = 300,
   playerRotate = 180,
 
   lineStairs = 0.01,
